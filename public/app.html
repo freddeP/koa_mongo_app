@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koa app</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .postForm{
+            margin:auto;
+            width:50%;
+            padding:1%;
+        }
+        .postForm input, .postForm textarea{
+            width:100%;
+            padding:2%;
+            font-size:1.6rem;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="postForm">
+        <form action="../todo" method="post">
+            <input type="text" name="task" placeholder="task"><br>
+            <textarea name="info" placeholder="Write more info"></textarea><br>
+            <input type="submit" value="save task">
+
+        </form>
+    </div>
+    <div id = "allTodos">
+    </div>
+    
+    <script>
+        
+        fetch('../todo')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(myJson) {
+            console.table(myJson);
+            document.getElementById("allTodos").innerHTML ="<pre>"+ JSON.stringify(myJson, null, 2) + "</pre>";
+        });
+    
+    
+    </script>
+</body>
+</html>

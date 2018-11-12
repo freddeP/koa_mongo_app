@@ -7,6 +7,7 @@ module.exports = function(app){
 
         if(err) throw err;
         app.todos = con.db("todoApp").collection("todos"); 
+        app.users = con.db("todoApp").collection("users"); 
         console.log("connection to mongoDb success");
 
     });

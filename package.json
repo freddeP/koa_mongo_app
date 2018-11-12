@@ -1,0 +1,32 @@
+{
+  "name": "koa_mongo_app",
+  "version": "1.0.0",
+  "description": "Koa mongoDb Web App",
+  "main": "index.js",
+  "dependencies": {
+    "escape-html": "^1.0.3",
+    "koa": "^2.6.2",
+    "koa-body": "^4.0.4",
+    "koa-cors": "0.0.16",
+    "koa-json": "^2.0.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.4",
+    "mongodb": "^3.1.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freddeP/koa_mongo_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freddeP/koa_mongo_app/issues"
+  },
+  "homepage": "https://github.com/freddeP/koa_mongo_app#readme"
+}
