@@ -4,7 +4,9 @@
   "description": "Koa mongoDb Web App",
   "main": "index.js",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "escape-html": "^1.0.3",
+    "jsonwebtoken": "^8.3.0",
     "koa": "^2.6.2",
     "koa-body": "^4.0.4",
     "koa-cors": "0.0.16",
